@@ -3453,19 +3453,16 @@ ul {
 .why-are-we__list {
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 .why-are-we__list li {
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 45px;
 }
 
-.why-are-we__list li+li {
-  margin-left: 105px;
-}
 
 .why-are-we__list li .icon {
   position: relative;
@@ -3524,14 +3521,15 @@ ul {
 }
 
 .why-are-we__list li .content h3 {
-  font-size: 15px;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 40px;
   text-transform: capitalize;
+  margin-bottom: 10px;
 }
 
 .why-are-we__list li .content p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 22px;
   margin-top: 5px;
 }
@@ -4717,7 +4715,7 @@ ul {
   position: relative;
   display: block;
   padding: 120px 0 95px;
-  background-color: var(--onpoint-extra);
+  background-color: var(--onpoint-white);
   z-index: 1;
 }
 
@@ -4727,8 +4725,9 @@ ul {
   right: 0;
   bottom: 166px;
   width: calc((100% - 90px) / 2);
+  background-image: url('../images/backgrounds/why-choose-two-bg.jpg');
   background-size: cover;
-  background-position: top right;
+  background-position: top left;
   background-repeat: no-repeat;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -4746,7 +4745,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 30px;
-  padding: 40px 60px 40px;
+  padding: 40px;
   animation: topBottom 3s ease-in-out infinite;
 }
 
@@ -4783,7 +4782,7 @@ ul {
 }
 
 .why-choose-two__need-help .content>h3 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 48px;
   margin-top: 11px;
@@ -4804,6 +4803,10 @@ ul {
 
 .why-choose-two__left .section-title {
   margin-bottom: 16px;
+}
+
+.why-choose-two__text {
+  margin-bottom: 40px;
 }
 
 .why-choose-two__btn-box {
