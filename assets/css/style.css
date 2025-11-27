@@ -540,7 +540,7 @@ a:visited {
 
 /* Solutions Section */
 .section-solutions {
-    background: var(--color-bg-dark);
+    background: var(--dark-bg-section);
     position: relative;
     display: block;
     padding: 120px 0;
@@ -883,7 +883,6 @@ a:visited {
     padding: 40px;
 }
 
-
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -922,7 +921,7 @@ a:visited {
 
 /* Footer */
 .footer {
-    background-color: var(--color-bg-dark);
+    background-color: var(--dark-bg-section);
     color: var(--white);
     padding: 60px 20px 20px;
 }
