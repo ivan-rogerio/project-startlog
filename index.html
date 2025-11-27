@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STARTLOG TRANSPORTES - Transporte Aéreo e Logística Completa</title>
     <meta name="description" content="Transporte aéreo com logística completa. Mais de 10 anos de experiência em soluções de transporte de cargas.">
+    <meta name="keywords" content="transporte aéreo, logística, carga, transporte rodoviário, distribuição">
+    <meta name="author" content="STARTLOG TRANSPORTES">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <title>STARTLOG TRANSPORTES - Transporte Aéreo e Logística Completa</title>
+    
+    <!-- Preconnect para performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css">
-
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header id="header">
+    <!-- Cabeçalho Principal -->
+    <header id="header" role="banner">
         <div class="container">
             <div class="logo">
-                <img src="assets/images/logo-startlog.png" alt="STARTLOG TRANSPORTES Logo">
+                <img src="assets/images/logo-startlog.png" alt="STARTLOG TRANSPORTES - Logotipo">
             </div>
-            <nav id="nav">
+            
+            <nav id="nav" role="navigation" aria-label="Navegação principal">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#quem-somos">Quem Somos</a></li>
@@ -27,10 +35,13 @@
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
-            <a href="https://wa.me/5511998032110" class="whatsapp-btn" target="_blank">
-                <i class="fab fa-whatsapp"></i> Precisa de Ajuda?</a>
+            
+            <a href="https://wa.me/5511998032110" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Entre em contato pelo WhatsApp">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i> 
+                <span>Precisa de Ajuda?</span>
+            </a>
                 
-            <button class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -38,309 +49,363 @@
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobile-menu">
+    <!-- Menu Mobile -->
+    <nav class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Navegação mobile" aria-hidden="true">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#quem-somos">Quem Somos</a></li>
             <li><a href="#solucoes">Soluções</a></li>
             <li><a href="#diferenciais">Diferenciais</a></li>
             <li><a href="#contato">Contato</a></li>
-            <li><a href="https://wa.me/5511998032110" class="mobile-whatsapp" target="_blank">
-                <i class="fab fa-whatsapp"></i> (11) 99803-2110</a></li>
+            <li>
+                <a href="https://wa.me/5511998032110" class="mobile-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Ligar pelo WhatsApp">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> (11) 99803-2110
+                </a>
+            </li>
         </ul>
-    </div>
+    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text fade-in">
-                <p class="tagline">O INÍCIO CERTO PARA SUA CARGA</p>
-                <h1>Logística Completa para Transportar sua Carga sem Complicações</h1>
-                <p class="subtitle">Há mais de uma década fornecendo soluções em transporte de carga de alta qualidade aos nossos clientes.</p>
-                <div class="hero-buttons">
-                    <a href="#solucoes" class="btn btn-primary">Nossas Soluções</a>
-                </div>
-            </div>
-            <div class="hero-images fade-in">
-                <div class="hero-image-container">
-                    <img src="assets/images/resources/hero-img-main.jpg" alt="Avião de Carga" class="hero-img-main">       
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="quem-somos" class="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content fade-in">
-                    <p class="tagline">Conheça a STARTLOG</p>
-                    <h2>Seu Parceiro Estratégico em Transporte de Carga</h2>
-                    <p>Com mais de 10 anos de atuação no mercado, a STARTLOG TRANSPORTES se consolidou como referência em transporte aéreo e soluções logísticas completas. Nossa equipe especializada e certificada pela ANAC garante que cada operação seja executada com máxima eficiência e segurança.</p>
-                    <p>Oferecemos soluções personalizadas que atendem às necessidades específicas de cada cliente, combinando rapidez, confiabilidade e transparência em todos os processos.</p>
-                </div>
-                <div class="about-images fade-in">
-                    <div class="about-img-main">
-                        <img src="assets/images/resources/about-one-img-1.jpg" alt="Operações de Carga">
-                        <div class="experience-badge">
-                            <span class="badge-number">10+</span>
-                            <span class="badge-text">Anos de<br>Experiência</span>
-                        </div>
+    <!-- Conteúdo Principal -->
+    <main id="main-content">
+        <!-- Seção Hero -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <article class="hero-text fade-in">
+                    <p class="tagline">O INÍCIO CERTO PARA SUA CARGA</p>
+                    <h1 id="hero-heading">Logística Completa para Transportar sua Carga sem Complicações</h1>
+                    <p class="subtitle">Há mais de uma década fornecendo soluções em transporte de carga de alta qualidade aos nossos clientes.</p>
+                    <div class="hero-buttons">
+                        <a href="#solucoes" class="btn btn-primary">Nossas Soluções</a>
                     </div>
-                    <div class="about-img-secondary">
-                        <img src="assets/images/resources/about-one-img-2.jpg" alt="Aeronave na Pista">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Core Values -->
-            <div class="values-grid">
-                <div class="value-card fade-in">
-                    <div class="value-card-content">
-                        <div class="value-icon">
-                            <i class="fas fa-bullseye"></i>
-                        </div>
-                        <h3>Missão</h3>
-                        <p>Promover serviço diferenciado, com soluções ágeis e atendimento humano, garantindo tranquilidade e segurança para o cliente.</p>
-                    </div>
-                </div>
+                </article>
                 
-                <div class="value-card fade-in">
-                    <div class="value-card-content">
-                        <div class="value-icon">
-                            <i class="fas fa-eye"></i>
-                        </div>
-                        <h3>Visão</h3>
-                        <p>Ser referência em soluções logísticas, com gestão eficiente de cargas e foco constante em inovação e tecnologia.</p>
+                <figure class="hero-images fade-in">
+                    <div class="hero-image-container">
+                        <img src="assets/images/resources/hero-img-main.jpg" alt="Avião de carga em operação" class="hero-img-main">       
                     </div>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Nós -->
+        <section id="quem-somos" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="about-grid">
+                    <article class="about-content fade-in">
+                        <p class="tagline">Conheça a STARTLOG</p>
+                        <h2 id="about-heading">Seu Parceiro Estratégico em Transporte de Carga</h2>
+                        <p>Com mais de 10 anos de atuação no mercado, a STARTLOG TRANSPORTES se consolidou como referência em transporte aéreo e soluções logísticas completas. Nossa equipe especializada e certificada pela ANAC garante que cada operação seja executada com máxima eficiência e segurança.</p>
+                        <p>Oferecemos soluções personalizadas que atendem às necessidades específicas de cada cliente, combinando rapidez, confiabilidade e transparência em todos os processos.</p>
+                        <a href="#contato" class="btn btn-secondary">Saiba Mais</a>
+                    </article>
+                    
+                    <figure class="about-images fade-in">
+                        <div class="about-img-main">
+                            <img src="assets/images/resources/about-one-img-1.jpg" alt="Operações de carga e logística">
+                            <div class="experience-badge" role="status" aria-label="10 anos de experiência">
+                                <span class="badge-number">10+</span>
+                                <span class="badge-text">Anos de<br>Experiência</span>
+                            </div>
+                        </div>
+                        <div class="about-img-secondary">
+                            <img src="assets/images/resources/about-one-img-2.jpg" alt="Aeronave na pista preparando carga">
+                        </div>
+                    </figure>
                 </div>
+
+                <!-- Valores Corporativos -->
+                <div class="values-grid">
+                    <article class="value-card fade-in">
+                        <div class="value-card-content">
+                            <div class="value-icon" aria-hidden="true">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h3>Missão</h3>
+                            <p>Promover serviço diferenciado, com soluções ágeis e atendimento humano, garantindo tranquilidade e segurança para o cliente.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="value-card fade-in">
+                        <div class="value-card-content">
+                            <div class="value-icon" aria-hidden="true">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3>Visão</h3>
+                            <p>Ser referência em soluções logísticas, com gestão eficiente de cargas e foco constante em inovação e tecnologia.</p>
+                        </div>
+                    </article>
+
+                    <article class="value-card fade-in">
+                        <div class="value-card-content">
+                            <div class="value-icon" aria-hidden="true">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Valores</h3>
+                            <p>Confiança, compromisso com o cliente e garantia de qualidade em todas as operações que realizamos.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Soluções -->
+        <section id="solucoes" class="section-solutions" aria-labelledby="solutions-heading">
+            <div class="container">
+                <header class="section-title fade-in">
+                    <p class="solution-tagline">A Agilidade que Seu Negócio Exige</p>
+                    <h2 id="solutions-heading" class="solution-title">Soluções Em Logística</h2>
+                    <p class="solution-subtitle">Transportamos a sua carga com agilidade e segurança, unindo tecnologia e soluções feitas para a sua empresa.</p>
+                </header>
                 
+                <div class="solutions-grid">
+                    <article class="solution-card fade-in">
+                        <figure class="solution-image">
+                            <img src="assets/images/resources/service-1-1.jpg" alt="Transporte aéreo de cargas">
+                        </figure>
+                        <div class="solution-content">
+                            <h3>Transporte Aéreo</h3>
+                            <p>Com mais de uma década de experiência no transporte de carga no modal aéreo, conquistamos espaço reservado e garantido em todas as companhias aéreas que atuam em território nacional, para atender suas necessidades de maneira ágil e segura.</p>
+                            <a href="#contato" class="btn-link" aria-label="Saiba mais sobre transporte aéreo">
+                                Saiba Mais <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="solution-card fade-in">
+                        <figure class="solution-image">
+                            <img src="assets/images/resources/service-1-2.jpg" alt="Transporte rodoviário de cargas">
+                        </figure>
+                        <div class="solution-content">
+                            <h3>Transporte Rodoviário</h3>
+                            <p>Somos especializados em transporte rodoviário de carga, contando com representantes em todo o país. Qualquer que seja a sua necessidade logística, estamos prontos para lhe apresentar a solução ideal para o transporte de sua carga.</p>
+                            <a href="#contato" class="btn-link" aria-label="Saiba mais sobre transporte rodoviário">
+                                Saiba Mais <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="solution-card fade-in">
+                        <figure class="solution-image">
+                            <img src="assets/images/resources/service-1-3.jpg" alt="Serviços de distribuição e armazenagem">
+                        </figure>
+                        <div class="solution-content">
+                            <h3>Distribuição</h3>
+                            <p>Oferecemos soluções em armazenagem e distribuição, onde contamos com especialistas com toda a experiência e tecnologia para gerenciar a alocação, manuseio e separação das cargas, garantindo uma operação eficiente e segura.</p>
+                            <a href="#contato" class="btn-link" aria-label="Saiba mais sobre distribuição">
+                                Saiba Mais <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                <div class="value-card fade-in">
-                    <div class="value-card-content">
-                        <div class="value-icon">
-                            <i class="fas fa-heart"></i>
+        <!-- Seção Call-to-Action -->
+        <section class="section-cta" aria-labelledby="cta-heading">
+            <div class="container">
+                <aside class="cta-container">
+                    <div class="cta-content">
+                        <div class="cta-content-text">
+                            <h2 id="cta-heading">Pronto para transportar sua carga?</h2>
+                            <p>Entre em contato e converse com nossos especialistas.</p>
                         </div>
-                        <h3>Valores</h3>
-                        <p>Confiança, compromisso com o cliente e garantia de qualidade em todas as operações que realizamos.</p>
+                        <div class="cta-content-button">
+                            <a href="https://wa.me/5511998032110" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Ligar agora pelo WhatsApp">
+                                <i class="fa-solid fa-bullhorn" aria-hidden="true"></i> Ligue agora!
+                            </a>
                         </div>
                     </div>
-                </div>
+                </aside>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Solutions Section -->
-    <section id="solucoes" class="section-solutions">
+        <!-- Seção Diferenciais -->
+        <section id="diferenciais" class="excellence" aria-labelledby="excellence-heading">
+            <div class="container">
+                <header class="section-title fade-in">
+                    <div class="excellence-content">
+                        <p class="tagline">Por que escolher a STARTLOG?</p>
+                        <h2 id="excellence-heading">Transporte Com Excelência A Todo Momento</h2>
+                        <p>Nós da STARTLOG entendemos que cada operação de transporte é única e deve ser tratada com o mais alto nível de cuidado e eficiência. Com nossa experiência e equipe dedicada, garantimos que sua carga chegue ao seu destino final com segurança e pontualidade.</p>
+                    </div>
+                </header>
+              
+                <div class="differencials-grid">
+                    <dl class="differentials">
+                        <div class="differential-item">
+                            <dt>
+                                <div class="differential-icon" aria-hidden="true">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                            </dt>
+                            <dd>
+                                <div class="differential-text">
+                                    <h3>Agilidade</h3>
+                                    <p>Tempos de resposta rápidos e soluções de entrega express para atender prazos críticos.</p>
+                                </div>
+                            </dd>
+                        </div>
+                        
+                        <div class="differential-item">
+                            <dt>
+                                <div class="differential-icon" aria-hidden="true">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                            </dt>
+                            <dd>
+                                <div class="differential-text">
+                                    <h3>Confiabilidade</h3>
+                                    <p>Serviço de confiança com desempenho consistente e histórico comprovado de entregas bem-sucedidas.</p>
+                                </div>
+                            </dd>
+                        </div>
+                        
+                        <div class="differential-item">
+                            <dt>
+                                <div class="differential-icon" aria-hidden="true">
+                                    <i class="fas fa-user-friends"></i>
+                                </div>
+                            </dt>
+                            <dd>
+                                <div class="differential-text">
+                                    <h3>Atendimento Personalizado</h3>
+                                    <p>Soluções customizadas e suporte dedicado para cada cliente, do início ao fim da operação.</p>
+                                </div>
+                            </dd>
+                        </div>
+                        
+                        <div class="differential-item">
+                            <dt>
+                                <div class="differential-icon" aria-hidden="true">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                            </dt>
+                            <dd>
+                                <div class="differential-text">
+                                    <h3>Soluções Sob Medida</h3>
+                                    <p>Planos logísticos personalizados e serviços flexíveis adaptados às suas necessidades específicas.</p>
+                                </div>
+                            </dd>
+                        </div>
+                    </dl>
+                    
+                    <figure class="excellence-image fade-in">
+                        <img src="assets/images/resources/excellence-img.jpg" alt="Equipe realizando operações aéreas de carga">
+                    </figure>
+                </div>
+            </div>
+        </section>
 
-        <div class="container">
-            <div class="section-title fade-in">
-                <p class="solution-tagline">A Agilidade que Seu Negócio Exige</span>
-                <h2 class="solution-title">Soluções Em Logística</h2>
-                <p class="solution-subtitle">Transportamos a sua carga com agilidade e segurança, unindo tecnologia e soluções feitas para a sua empresa.</p>
-            </div>
-            <div class="solutions-grid">
-                <div class="solution-card fade-in">
-                    <div class="solution-image">
-                        <img src="assets/images/resources/service-1-1.jpg" alt="Transporte Aéreo">
+        <!-- Seção Contato -->
+        <section id="contato" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <header class="section-title fade-in">
+                    <div class="contact-content">
+                        <h2 id="contact-heading">Entre Em Contato</h2>
+                        <p>Nossa equipe está pronta para atender você com agilidade e transparência. Tire suas dúvidas, solicite uma cotação ou fale diretamente conosco.</p>
                     </div>
-                    <div class="solution-content">
-                        <h3>Transporte Aéreo</h3>
-                        <p>Com mais de uma década de experiência no transporte de carga no modal aéreo, conquistamos espaço reservado e garantido em todas as companhias aéreas que atuam em território nacional, para atender suas necessidades de maneira ágil e segura.</p>
-                        <a href="#contato" class="btn-link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="solution-card fade-in">
-                    <div class="solution-image">
-                        <img src="assets/images/resources/service-1-2.jpg" alt="Transporte Rodoviário">
-                    </div>
-                    <div class="solution-content">
-                        <h3>Transporte Rodoviário</h3>
-                        <p>Somos especializados em transporte rodoviário de carga, contando com representantes em todo o país. Qualquer que seja a sua necessidade logística, estamos prontos para lhe apresentar a solução ideal para o transporte de sua carga.</p>
-                        <a href="#contato" class="btn-link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="solution-card fade-in">
-                    <div class="solution-image">
-                        <img src="assets/images/resources/service-1-3.jpg" alt="Distribuição">
-                    </div>
-                    <div class="solution-content">
-                        <h3>Distribuição</h3>
-                        <p>Oferecemos soluções em armazenagem e distribuição, onde contamos com especialistas com toda a experiência e tecnologia para gerenciar a alocação, manuseio e separação das cargas, garantindo uma operação eficiente e segura.</p>
-                        <a href="#contato" class="btn-link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call-To-Action Section-->
-    <section class="section-cta">
-        <div class="container">
-            <div class="cta-container">
-                <div class="cta-content">
-                    <div class="cta-content-text">
-                        <h2>Pronto para transportar sua carga?</h2>
-                        <p>Entre em contato e converse com nossos especialistas.</p>
-                    </div>
-                    <div class="cta-content-button">
-                         <a href="https://wa.me/5511998032110" class="btn btn-primary" target="_blank">
-                <i class="fa-solid fa-bullhorn"></i> Ligue agora!</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Excellence Section -->
-    <section id="diferenciais" class="excellence">
-        <div class="container">
-            <div class="section-title fade-in">
-                <div class="excellence-content">
-                    <p class="tagline">Por que escolher a STARTLOG?</p>
-                    <h2>Transporte Com Excelência A Todo Momento</h2>
-                    <p>Nós da STARTLOG entendemos que cada operação de transporte é única e deve ser tratada com o mais alto nível de cuidado e eficiência. Com nossa experiência e equipe dedicada, garantimos que sua carga chegue ao seu destino final com segurança e pontualidade.</p>
-                </div>
-            </div>
-          
-            <div class="differencials-grid">
-                <div class="differentials">
-                    <div class="differential-item">
-                        <div class="differential-icon">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <div class="differential-text">
-                            <h3>Agilidade</h3>
-                            <p>Tempos de resposta rápidos e soluções de entrega express para atender prazos críticos.</p>
-                        </div>
-                    </div>
-                    <div class="differential-item">
-                        <div class="differential-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="differential-text">
-                            <h3>Confiabilidade</h3>
-                            <p>Serviço de confiança com desempenho consistente e histórico comprovado de entregas bem-sucedidas.</p>
-                        </div>
-                    </div>
-                    <div class="differential-item">
-                        <div class="differential-icon">
-                            <i class="fas fa-user-friends"></i>
-                        </div>
-                        <div class="differential-text">
-                            <h3>Atendimento Personalizado</h3>
-                            <p>Soluções customizadas e suporte dedicado para cada cliente, do início ao fim da operação.</p>
-                        </div>
-                    </div>
-                    <div class="differential-item">
-                        <div class="differential-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <div class="differential-text">
-                            <h3>Soluções Sob Medida</h3>
-                            <p>Planos logísticos personalizados e serviços flexíveis adaptados às suas necessidades específicas.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="excellence-image fade-in">
-                    <img src="assets/images/resources/excellence-img.jpg" alt="Operações Aéreas">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contato" class="contact">
-        <div class="container">
-            <div class="section-title fade-in">
-                <div class="contact-content">
-                    <h2>Entre Em Contato</h2>
-                    <p>Nossa equipe está pronta para atender você com agilidade e transparência. Tire suas dúvidas, solicite uma cotação ou fale diretamente conosco.</p>
-                </div>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info fade-in">
-                    <h3>Canais de Atendimento</h3>
-                    <p>Saiba como podemos tornar o transporte da sua carga uma experiência segura, rápida e confiável.</p>
-                    <div class="contact-info-list">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone-alt"></i>
+                </header>
+                
+                <div class="contact-grid">
+                    <aside class="contact-info fade-in">
+                        <h3>Canais de Atendimento</h3>
+                        <p>Saiba como podemos tornar o transporte da sua carga uma experiência segura, rápida e confiável.</p>
+                        
+                        <address class="contact-info-list">
+                            <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Telefone</h4>
+                                    <p><a href="tel:+5511998032110">(11) 99803-2110</a></p>
+                                </div>
                             </div>
-                            <div class="contact-details">
-                                <h4>Telefone</h4>
-                                <p><a href="tel:+5511998032110">(11) 99803-2110</a></p>
+                          
+                            <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>E-mail</h4>
+                                    <p><a href="mailto:contato@startlogtransportes.com.br">contato@startlogtransportes.com.br</a></p>
+                                </div>
                             </div>
-                        </div>
-                      
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>E-mail</h4>
-                                <p><a href="mailto:contato@startlogtransportes.com.br">contato@startlogtransportes.com.br</a></p>
-                            </div>
-                        </div>
 
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Endereço</h4>
+                                    <p>Av. Luiz Rink, 504 - Vila Ayrosa<br>
+                                    Osasco - SP - 06290-150</p>
+                                </div>
                             </div>
-                            <div class="contact-details">
-                                <h4>Endereço</h4>
-                                <p>Av. Luiz Rink, 504 - Vila Ayrosa<br>
-                                Osasco - SP - 06290-150</p>
+                        </address>
+                    </aside>
+                    
+                    <div class="contact-form-wrapper fade-in">
+                        <h3>Precisa de mais informações?</h3>
+                        <p>Preencha o formulário abaixo para maiores informações, e em breve, nossa equipe de atendimento entra em contato.</p>
+                        
+                        <form id="contact-form" class="contact-form" method="post" action="#" novalidate>
+                            <div class="form-group">
+                                <label for="name" class="sr-only">Nome completo</label>
+                                <input type="text" id="name" name="name" placeholder="Nome completo" required aria-required="true">
                             </div>
-                        </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="sr-only">Telefone para contato</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Telefone contato" required aria-required="true">
+                            </div>
+                           
+                            <div class="form-group">
+                                <label for="email" class="sr-only">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="E-mail" required aria-required="true">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="sr-only">Assunto</label>
+                                <input type="text" id="subject" name="subject" placeholder="Assunto" required aria-required="true">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="sr-only">Mensagem</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Mensagem" required aria-required="true"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Enviar Agora</button>
+                        </form>
                     </div>
                 </div>
-                <div class="contact-form-wrapper fade-in">
-                    <h3>Precisa de mais informações?</h3>
-                    <p>Preencha o formulário abaixo para maiores informações, e em breve, nossa equipe de atendimento entrá em contato.</p>
-                    <form id="contact-form" class="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Nome completo" required>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Telefone contato" required>
-                        </div>
-                       
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="E-mail" required>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Assunto" required>
-                        </div>
-
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Mensagem" required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Enviar Agora</button>
-                    </form>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Map Section -->
-    <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.466989609115!2d-46.776145887975716!3d-23.515700559830098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefee38fb49533%3A0x40f59b22426f6546!2sAv.%20Lu%C3%ADs%20Rink%2C%20504%20-%20Mutinga%2C%20Osasco%20-%20SP%2C%2006286-000!5e0!3m2!1sen!2sbr!4v1761794755393!5m2!1sen!2sbr"></iframe>
-    </section>
+        <!-- Seção Mapa -->
+        <section class="map" aria-labelledby="map-heading">
+            <h2 id="map-heading" class="sr-only">Localização no mapa</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.466989609115!2d-46.776145887975716!3d-23.515700559830098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefee38fb49533%3A0x40f59b22426f6546!2sAv.%20Lu%C3%ADs%20Rink%2C%20504%20-%20Mutinga%2C%20Osasco%20-%20SP%2C%2006286-000!5e0!3m2!1sen!2sbr!4v1761794755393!5m2!1sen!2sbr"
+                title="Mapa de localização da STARTLOG TRANSPORTES"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Rodapé -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
                     <img src="assets/images/logo-startlog.png" alt="STARTLOG TRANSPORTES" class="footer-logo">
                     <p>Transporte aéreo com logística completa. Mais de 10 anos entregando velocidade, segurança e soluções personalizadas.</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Páginas</h4>
+                
+                <nav class="footer-links" aria-labelledby="footer-nav-heading">
+                    <h4 id="footer-nav-heading">Páginas</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#quem-somos">Quem Somos</a></li>
@@ -348,40 +413,65 @@
                         <li><a href="#diferenciais">Diferenciais</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
-                </div>
-                <div class="footer-contact">
+                </nav>
+                
+                <address class="footer-contact">
                     <h4>Contato</h4>
-                    <ul>
-                        <li><i class="fas fa-phone-alt"></i> (11) 99803-2110</li>
-                        <li><i class="fas fa-envelope"></i> contato@startlogtransportes.com.br</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Av. Luiz Rink, 504 - Vila Ayrosa <br> Osasco - SP - 06290-150</li>
+                    <ul class="contact-list">
+                        <li>
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt" aria-hidden="true"></i> 
+                            </div>
+                            <a href="tel:+5511998032110">(11) 99803-2110</a>
+                        </li>
+                        <li>
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope" aria-hidden="true"></i> 
+                            </div>
+                            <a href="mailto:contato@startlogtransportes.com.br">contato@startlogtransportes.com.br</a>
+                        </li>
+                        <li>
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i> 
+                            </div>
+                            <p>Av. Luiz Rink, 504 - Vila Ayrosa<br>Osasco - SP - 06290-150</p>
+                        </li>
                     </ul>
-                </div>
+                </address>
+                
                 <div class="footer-hours">
                     <h4>Siga-nos</h4>
-                    <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    <nav class="social-links" aria-label="Redes sociais">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                    </nav>
                 </div>
             </div>
+            
             <div class="footer-bottom">
                 <p>&copy; STARTLOG TRANSPORTES 2025 | Todos os Direitos Reservados</p>
-                <div class="footer-legal">
+                <nav class="footer-legal" aria-label="Links legais">
                     <a href="#">Termos e Condições</a>
-                    <span>|</span>
+                    <span aria-hidden="true">|</span>
                     <a href="#">Política de Privacidade</a>
-                </div>
+                </nav>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo da página">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </button>
 
+    <!-- Scripts -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
