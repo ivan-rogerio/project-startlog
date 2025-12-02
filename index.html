@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
 </head>
 <body>
     <!-- Cabeçalho Principal -->
@@ -78,12 +79,53 @@
                         <a href="#solucoes" class="btn btn-primary">Nossas Soluções</a>
                     </div>
                 </article>
-                
-                <figure class="hero-images fade-in">
-                    <div class="hero-image-container">
-                        <img src="assets/images/resources/hero-img-main.jpg" alt="Avião de carga em operação" class="hero-img-main">       
-                    </div>
-                </figure>
+
+                <div class="carousel">
+                    <ul class="carousel__list">
+                        <li class="carousel__item" tabindex="0">
+                            <div class="carousel__box">
+                            <div class="carousel__image"><img src="assets/images/slides/slide-img-1.jpg"></div>
+                            <div class="carousel__contents">
+                                <h2 class="user__name">Transporte Aéreo</h2>
+                            </div>
+                            </div>
+                        </li>
+     
+                        <li class="carousel__item" tabindex="0">
+                            <div class="carousel__box">
+                            <div class="carousel__image"><img src="assets/images/slides/slide-img-2.jpg"></div>
+                                <div class="carousel__contents">
+                                    <h2 class="user__name">Transporte Rodoviário</h2>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="carousel__item" tabindex="0">
+                            <div class="carousel__box">
+                            <div class="carousel__image"><img src="assets/images/slides/slide-img-3.jpg"></div>
+                                <div class="carousel__contents">
+                                    <h2 class="user__name">Distribuição</h2>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="carousel__item" tabindex="0">
+                            <div class="carousel__box">
+                            <div class="carousel__image"><img src="assets/images/slides/slide-img-4.jpg"></div>
+                                <div class="carousel__contents">
+                                    <h2 class="user__name">Distribuição</h2>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="carousel__item" tabindex="0">
+                            <div class="carousel__box">
+                            <div class="carousel__image"><img src="assets/images/slides/slide-img-5.jpg"></div>
+                                <div class="carousel__contents">
+                                    <h2 class="user__name">Distribuição</h2>
+                                </div>
+                            </div>
+                        </li>
+      
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -296,6 +338,50 @@
             </div>
         </section>
 
+        <section class="coverage-area">
+            <div class="container">
+               <div class="coverage-area-grid">
+                   <div class="coverage-area-content">
+                        <article>
+                           <h2>Área de Cobertura</h2>
+                           <p>Atuamos em todo o território nacional, por meio dos modais aéreo e rodoviário. Contamos com parcerias estratégicas nas principais cidades e aeroportos do país, oferecendo soluções logísticas eficientes e personalizadas.</p> 
+                        </article>
+                        <img src="/assets/images/resources/logistic-img.png" alt="">
+                    </div>
+
+                    <div class="coverage-area-map fade-in">
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <div class="pin" aria-hidden="true"></div>
+                        <img src="/assets/images/resources/coverage-area-map.png" alt="">
+                    </div>
+               </div>
+            </div>
+        </section>
+
         <!-- Seção Contato -->
         <section id="contato" class="contact" aria-labelledby="contact-heading">
             <div class="container">
@@ -328,7 +414,7 @@
                                 </div>
                                 <div class="contact-details">
                                     <h4>E-mail</h4>
-                                    <p><a href="mailto:contato@startlogtransportes.com.br">contato@startlogtransportes.com.br</a></p>
+                                    <p><a href="mailto:contato@startlogtransportes.com.br">startlog@startlogtransportes.com.br</a></p>
                                 </div>
                             </div>
 
@@ -375,7 +461,7 @@
                                 <textarea id="message" name="message" rows="5" placeholder="Mensagem" required aria-required="true"></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-block">Enviar Agora</button>
+                            <button type="submit" class="btn btn-primary">Enviar Agora</button>
                         </form>
                     </div>
                 </div>
@@ -428,7 +514,7 @@
                             <div class="contact-icon">
                                 <i class="fas fa-envelope" aria-hidden="true"></i> 
                             </div>
-                            <a href="mailto:contato@startlogtransportes.com.br">contato@startlogtransportes.com.br</a>
+                            <a href="mailto:contato@startlogtransportes.com.br">startlog@startlogtransportes.com.br</a>
                         </li>
                         <li>
                             <div class="contact-icon">
@@ -466,6 +552,15 @@
         </div>
     </footer>
 
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5511998032110?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20STARTLOG." 
+    class="whatsapp-float" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    aria-label="Fale conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
     <!-- Botão Voltar ao Topo -->
     <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo da página">
         <i class="fas fa-arrow-up" aria-hidden="true"></i>
@@ -473,5 +568,6 @@
 
     <!-- Scripts -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/slider.js"></script>
 </body>
 </html>
